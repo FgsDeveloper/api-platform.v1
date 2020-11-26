@@ -138,6 +138,20 @@ services:
         published: 80
         protocol: tcp
 
+  myadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: on-failure
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - 8081:80
+    environment:
+      - PMA_HOST=db
+      - PHP_UPLOAD_MAX_FILESIZE=100MB
+        
+
 volumes:
   db: 
   dev-certs: {}
