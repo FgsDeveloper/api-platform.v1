@@ -1,3 +1,8 @@
+# Wichtig!
+Nicht vergessen die *.env* Dateinen im Verzeichnis /client und /admin an die richtige Domain anpassen! Steht default mäßig auf 
+```
+REACT_APP_API_ENTRYPOINT=https://localhost:8443
+```
 # Long Story Short:
 
 This is a repository `api-platform-mysql` done by me: Andy Ng (andy@pcinvent.com), CEO of AITRADE, INC. (www.aitrade.ai)
